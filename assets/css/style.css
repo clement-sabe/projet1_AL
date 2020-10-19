@@ -46,12 +46,11 @@ body {
 
 .separation {
     border: 1px solid #042642;
-    width: 350px;
+    width: 450px;
     text-align:center;
-    margin: 350px;
-  
-
-    margin: 3% 0;
+    margin-left: 470px;
+    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 
@@ -157,9 +156,9 @@ a:hover{
     margin: 20px 20px;
     color:#042642;
 }
-openTime{
+.openTime{
     font-size:25px;
-    margin-right: 350px;
+    text-align: center;
 }
 
 .presentation1 {
