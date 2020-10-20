@@ -168,9 +168,6 @@ a:hover{
     margin-left: 200px;
 }
 
-.teamFlower {
-    margin-left: 200px;
-}
 
 .teamPresentation {
     font-size: 18px;
@@ -186,27 +183,30 @@ a:hover{
 .boxPresentation {
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    gap: 10px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
-    border: 2px solid #042642
+    /* border: 2px solid #042642 */
 
 }
 
 .boxPresentation>div {
 
     font-size: 18px;
-    width: 95%;
     height: auto;
     text-align: center;
-    margin: 20px 20px;
+    margin: 20px;
     color:#042642;
-   ;
+  
+    
+
+   
 }
 
 .img1 {
   grid-column: 1 ;
   grid-row: 1;  
+  padding-top: 100px;
+
  
 
 
@@ -215,43 +215,57 @@ a:hover{
 .txt1 {
   grid-column: 2 ;
   grid-row: 1 ;
-  border: , solid, 1px;
+  border: 2px solid #F7B658;
+  padding: 35px;
+  border-radius: 50%;
   
 }
 
 .img2 {
   grid-column:  2;
   grid-row: 2;
+  padding-top: 100px;
   
 }
 
 .txt2 {
   grid-column:  1 ;
   grid-row: 2;
+  border: 2px solid #F7B658;
+  padding: 30px;
+  border-radius: 50%;
  
 }
 
 .img3 {
   grid-column: 1 ;
   grid-row: 3;
+  padding-top: 100px;
   
 }
 
 .txt3 {
   grid-column: 2 ;
   grid-row: 3;
+  border: 2px solid #F7B658;
+  padding: 40px;
+  border-radius: 50%;
  
 }
 
 .img4 {
   grid-column: 2 ;
   grid-row: 4;
+  padding-top: 100px;
  
 }
 
 .txt4 {
   grid-column: 1 ;
   grid-row: 4;
+  border: 2px solid #F7B658;
+  padding: 30px;
+  border-radius: 50%;
  
 
 }
@@ -259,6 +273,7 @@ a:hover{
 .img5 {
   grid-column: 1 ;
   grid-row: 5;
+  padding-top: 100px;
  
 
 }
@@ -266,6 +281,9 @@ a:hover{
 .txt5 {
   grid-column: 2 ;
   grid-row: 5;
+  border: 2px solid #F7B658;
+  padding: 40px;
+  border-radius: 50%;
    
   
   }
@@ -273,6 +291,7 @@ a:hover{
   .img6 {
   grid-column: 2 ;
   grid-row: 6;
+  padding-top: 100px;
    
   
   }
@@ -280,6 +299,9 @@ a:hover{
   .txt6 {
   grid-column: 1 ;
   grid-row: 6;
+  border: 2px solid #F7B658;
+  padding: 30px;
+  border-radius: 50%;
    
   
   }
@@ -287,6 +309,7 @@ a:hover{
   .img7 {
   grid-column: 1 ;
   grid-row: 7;
+  padding-top: 100px;
     
   
   }
@@ -294,5 +317,10 @@ a:hover{
   .txt7 {
   grid-column: 2 ;
   grid-row: 7;
+  border: 2px solid #F7B658;
+  border-radius: 50%;
+  padding: 40px;
+ 
+ 
       
   }
