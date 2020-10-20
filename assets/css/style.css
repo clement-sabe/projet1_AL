@@ -36,8 +36,27 @@ body {
     
 }
 
+.bigBox { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    margin-left: 100px;
+
+}
+
+.prez {
+    grid-column: 1 6;
+    grid-row: 1;
+    text-align: center;
+    margin: 20px 20px;
+    color:#042642;
+    margin-left: 100px
+}
+
 .shop{
-    margin-left:200px;
+    grid-column: 1 6;
+    grid-row: 2;
+    margin-left: 70px;
 }
 
 .separation {
@@ -140,17 +159,9 @@ a:hover{
 }
 
 /* partie presentation de l'equipe + photo */
-.prez {
-    font-size: 18px;
-    width: 95%;
-    height: auto;
-    text-align: center;
-    margin: 20px 20px;
-    color:#042642;
-}
 .openTime{
     font-size:25px;
-    text-align: center;
+    margin-left: 80PX;
 }
 
 .presentation1 {
