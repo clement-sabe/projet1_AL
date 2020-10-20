@@ -4,8 +4,16 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    background-color: white;
+}
+
 .logo {
-    grid-area: logo;
     margin-left:50px;
     margin-top: 15px;
     }
@@ -27,7 +35,6 @@ body {
     border-radius: 30px;
     
 }
-
 
 .shop{
     margin-left:200px;
@@ -54,15 +61,6 @@ body {
 }
 
 /* container principal */
-.container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-
-    width: 90vw;
-    height: auto;
-    background-color: white;
-}
 
 /* header et son contenus */
 header {
