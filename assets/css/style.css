@@ -4,7 +4,7 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
-.grid-container {
+/* .grid-container {
     display: grid;
     grid-template-columns: 1.3fr 1.4fr 1.3fr;
     grid-template-rows: repeat(3, 1fr);
@@ -13,7 +13,7 @@ body {
         "logo desc desc"
         ". . ."
         ". . .";
-}
+} */
 
 .logo {
     grid-area: logo;
@@ -133,6 +133,12 @@ nav ul {
     justify-content: center;
     margin-left: 0;
     padding-left: 0;
+}
+.imgDecoButton{
+    width: 20px;
+    height: 22px;
+    
+    
 }
 
 a{
