@@ -4,17 +4,6 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
-/* .grid-container {
-    display: grid;
-    grid-template-columns: 1.3fr 1.4fr 1.3fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0px 0px;
-    grid-template-areas:
-        "logo desc desc"
-        ". . ."
-        ". . .";
-} */
-
 .logo {
     grid-area: logo;
     margin-left:50px;
