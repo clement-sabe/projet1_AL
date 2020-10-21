@@ -36,18 +36,41 @@ body {
     
 }
 
+.bigBox { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    margin-left: 100px;
+
+}
+
+.prez {
+    grid-column: 1 6;
+    grid-row: 1;
+    text-align: center;
+    margin: 20px 20px;
+    color:#042642;
+    margin-left: 100px
+}
+
 .shop{
-    margin-left:200px;
+    grid-column: 1 6;
+    grid-row: 2;
+    margin-left: 70px;
 }
 
 /**** BARRE DE SÉPARATION ****/
 .separation {
-    border: 1px solid #042642;
+    border: 2px solid #042642;
     width: 450px;
     text-align:center;
-    margin-left: 470px;
+    margin-left: 390px;
     margin-bottom: 20px;
     margin-top: 15px;
+}
+.separ {
+    border: 2px solid #042642;
+    width: 50%;
 }
 
 
@@ -77,12 +100,6 @@ header {
 
 }
 
-
-
-.separ {
-    border: 2px solid #042642;
-    width: 50%;
-}
 
 h1 {
     color: #042642;
@@ -141,18 +158,12 @@ a:hover{
     color: #F7B658;
 }
 
-/**** partie photos boutique + texte ****/
-.prez {
-    font-size: 18px;
-    width: 95%;
-    height: auto;
-    text-align: center;
-    margin: 20px 20px;
-    color:#042642;
-}
+/* partie presentation de l'equipe + photo */
 .openTime{
     font-size:25px;
-    text-align: center;
+    margin-left: 80PX;
+    color:  #042642;
+
 }
             /****** SECTION ******/
 /*** Notre équipe ***/
