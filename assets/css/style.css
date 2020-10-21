@@ -427,7 +427,7 @@ a:hover{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row: 1fr 1fr 1fr;
     background-color: #042642;
-    padding-left: 50px;
+    padding-left: 10px;
     padding-top: 10px;
     border-radius: 20px;
 }
@@ -438,16 +438,22 @@ a:hover{
 .icon2{
     grid-column: 2 ;
     grid-row: 1 ;
+    width: 73px;
+margin-left: 10px;
 }
 .icon3{
     grid-column: 3 ;
     grid-row: 1 ;
+    width: 50px;
+height: 50px;
+margin-right: 30px;
 }
 .icon4{
     grid-column: 4 ;
     grid-row: 1 ;
 }
 .infos1{
+    margin-top: 15px;
    grid-column: 7 ;
    grid-row: 1 ;
    color: #ffffff;
@@ -461,17 +467,24 @@ a:hover{
     color: #ffffff;
     grid-column: 1 7 ;
     grid-row: 2 ;
-    margin-bottom: 30px;
+    margin-top: 10px;
 }
 .place2{
   color: #ffffff;
   grid-column:2  ;
   grid-row: 2 ;
   margin-bottom: 30px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
   
-@media screen and (max-width: 858px) {
+@media screen and (max-width: 800px) {
+
+nav{
+    height: 80px;
+}
+.desc{display: none;}
 
 .header {
     display: flex;
@@ -479,10 +492,13 @@ a:hover{
 }
 
 .logo {
-    float: left;
-    width: 80%;
+  
+    width: 50%;
     top: 25% ;
-    left: 20%;
+    margin-left: -45px;
+
+    
+
     
 }
 
@@ -515,13 +531,13 @@ a:hover{
 }
 
 .shop {
-    margin-right: 50px;
+    margin-left: 70px;
     width: 500px;
     height: auto;
 }
 
 .shop1 {
-    margin-right: 50px;
+    margin-left: 70px;
     width: 500px;
     height: auto;
 
@@ -532,6 +548,12 @@ a:hover{
 /* .equipe { */
 @media screen and (max-width: 680px) {
   
+    /* .containerFooter{
+        margin-left: 50px;
+    }
+    .fb{
+        margin-left: 50px;
+    } */
     header {
         width: 100%;
         height: 23%;
