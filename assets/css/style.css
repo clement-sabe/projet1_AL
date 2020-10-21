@@ -529,7 +529,7 @@ a:hover{
 
 
 
-.equipe {
+/* .equipe { */
 @media screen and (max-width: 680px) {
   
     header {
@@ -591,7 +591,6 @@ a:hover{
     padding: 40px;
     border: #ffffff;
        
-<<<<<<< HEAD
    }
 
       .img4 {
@@ -644,12 +643,7 @@ a:hover{
   
     }
 }
-=======
       
        
->>>>>>> 48d7640a066ab490e4d71bcbc382ac8c90c686ba
-  }
 
-  @media (max-width: 450px) {
 
-  }
