@@ -1,3 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
 body {
     display: flex;
     justify-content: center;
@@ -59,18 +66,23 @@ body {
     margin-left: 70px;
 }
 
+/**** BARRE DE SÉPARATION ****/
 .separation {
-    border: 1px solid #042642;
+    border: 2px solid #042642;
     width: 450px;
     text-align:center;
-    margin-left: 470px;
+    margin-left: 390px;
     margin-bottom: 20px;
     margin-top: 15px;
+}
+.separ {
+    border: 2px solid #042642;
+    width: 50%;
 }
 
 
 
-/* couleurs des titres */
+/**** couleurs des titres ****/
 #ancre1,
 #ancre2,
 #ancre3,
@@ -81,7 +93,7 @@ body {
 
 /* container principal */
 
-/* header et son contenus */
+/**** header et son contenus ****/
 header {
     width: 100%;
     height: 23%;
@@ -95,12 +107,6 @@ header {
 
 }
 
-
-
-.separ {
-    border: 2px solid #042642;
-    width: 50%;
-}
 
 h1 {
     color: #042642;
@@ -124,21 +130,33 @@ h2 {
     text-decoration: underline;
 }
 
-/* barre de navigation */
+/**** barre de navigation ****/
 nav {
     width: 100%;
-    height: auto;
-    background-color: #042642;
+    height: 80px;
+    background: #042642;
     border-radius: 30px;
 }
 
 nav ul {
-    list-style-type: none;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-left: 0;
     padding-left: 0;
+}
+nav ul li{
+    display:inline-block;
+   
+    line-height:80px;
+}
+nav ul li a{
+    color:#F7B658;
+}
+a.active{
+    
+    transition: .5s;
 }
 .imgDecoButton{
     width: 20px;
@@ -150,6 +168,7 @@ a{
     font-size: 18px;
     margin: 0 50px;
     color: white;
+    
 }
 
 a:hover{
@@ -157,6 +176,60 @@ a:hover{
     margin: 0 50px;
     color: #F7B658;
 }
+/* a.active{
+    background-color: #F7B658;
+} */
+.checkbtn {
+     font-size: 30px; 
+     color: white; 
+     float: right;
+     line-height: 80px;
+     margin-right: 40px;
+     cursor: pointer;
+     display: none;
+    }
+    #check{
+        display: none;
+    }
+    @media (max-width:858px){
+        .imgDecoButton{
+         display:none;
+        }
+        .checkbtn{
+            display:block;
+        }
+        ul{
+            display:none;
+            position: fixed;
+            width:100%;
+            height: 50vh;
+            background-color:red;
+            top: 50pxpx;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+        nav ul li{
+            display:block;
+            margin:50px 0;
+            line-height:30px;
+        }
+        nav ul li a{
+            font-size:20px;
+        }
+        a{
+            list-style: \ 2698;
+            color:red
+        }
+        a:hover,a.active{
+            background:none;
+            color:#042642;
+        }
+        #check:checked ~ ul{
+            left:0;
+        }
+
+    }
 
 /* partie presentation de l'equipe + photo */
 
@@ -169,7 +242,11 @@ a:hover{
 .openTime{
     font-size:25px;
     margin-left: 80PX;
+    color:  #042642;
+
 }
+            /****** SECTION ******/
+/*** Notre équipe ***/
 
 
 .presentation1 {
@@ -402,6 +479,7 @@ a:hover{
        
       
        
+<<<<<<< HEAD
        
       }
 
@@ -455,3 +533,10 @@ a:hover{
   
     }
 }
+=======
+  }
+
+  @media (max-width: 450px) {
+
+  }
+>>>>>>> ceabb5e01a9b17afca1f9f8a6d1f6b92d13a7146
