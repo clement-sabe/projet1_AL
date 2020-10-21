@@ -13,7 +13,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     width: 90vw;
     height: auto;
@@ -21,8 +21,7 @@ body {
 }
 
 .logo {
-    margin-left:50px;
-    margin-top: 15px;
+    display: flex;
     }
 .logoPME{
         border-radius: 50%;
@@ -35,17 +34,17 @@ body {
     margin-bottom: 75px;
     text-align:center;
     color:  #042642;
-    font-size: 20px;
-    border: 2px solid #F7B658;
-    border-radius: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+    /* border: 2px solid #F7B658;
+    border-radius: 30px; */
     
 }
 
 .bigBox { 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
-
-    margin-left: 100px;
+    grid-template-columns: 1fr  
+    
 
 }
 
@@ -55,19 +54,19 @@ body {
     text-align: center;
     margin: 20px 20px;
     color:#042642;
-    margin-left: 100px
+    margin-left: 150px
 }
 
 .shop{
     grid-column: 1 6;
     grid-row: 2;
-    margin-left: 70px;
+    margin-left: 150px;
 }
 
 .shop1{
     width:1024px; 
     height:572px;
-    margin-left: 70px
+    margin-left: 150px
 }
 
 /**** BARRE DE SÉPARATION ****/
@@ -75,13 +74,14 @@ body {
     border: 2px solid #042642;
     width: 450px;
     text-align:center;
-    margin-left: 390px;
+    margin-left: 400px;
     margin-bottom: 20px;
     margin-top: 15px;
 }
 .separ {
     border: 2px solid #042642;
     width: 50%;
+    margin-left: 150px;
 }
 
 
@@ -102,7 +102,9 @@ header {
     width: 100%;
     height: 23%;
     display: flex;
-    background-color: white;
+    background: url(../img/bgh.jpg);
+    border-top-right-radius:30px; 
+    border-top-left-radius:30px; 
 }
 
 .head1 {
@@ -137,31 +139,24 @@ h2 {
 /**** barre de navigation ****/
 nav {
     width: 100%;
-    height: 80px;
+    line-height: : 80px;
     background: #042642;
-    border-radius: 30px;
+    border-bottom-right-radius:30px; 
+    border-bottom-left-radius:30px; 
+
 }
 
 nav ul {
-
+    margin: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-left: 0;
     padding-left: 0;
 }
-nav ul li{
-    display:inline-block;
-   
-    line-height:80px;
-}
-nav ul li a{
-    color:#F7B658;
-}
-a.active{
-    
-    transition: .5s;
-}
+
+
+
 .imgDecoButton{
     width: 20px;
     height: 22px;
@@ -170,19 +165,17 @@ a.active{
 
 a{
     font-size: 18px;
-    margin: 0 50px;
+    margin-left:70px;
     color: white;
     
 }
 
 a:hover{
     font-size: 18px;
-    margin: 0 50px;
+    /* margin: 0 70px; */
     color: #F7B658;
 }
-/* a.active{
-    background-color: #F7B658;
-} */
+
 .checkbtn {
      font-size: 30px; 
      color: white; 
@@ -196,22 +189,21 @@ a:hover{
         display: none;
     }
     @media (max-width:858px){
-        .imgDecoButton{
-         display:none;
+        nav{
+            justify-content: center;
         }
         .checkbtn{
             display:block;
-        }
+        } 
         ul{
             display:none;
-            position: fixed;
             width:100%;
             height: 50vh;
-            background-color:red;
+         
             top: 50pxpx;
             left: -100%;
             text-align: center;
-            transition: all .5s;
+            /* transition: all .5s; */
         }
         nav ul li{
             display:block;
@@ -220,18 +212,16 @@ a:hover{
         }
         nav ul li a{
             font-size:20px;
+            display: none;
         }
-        a{
-            list-style: \ 2698;
-            color:red
-        }
+       
         a:hover,a.active{
             background:none;
             color:#042642;
         }
         #check:checked ~ ul{
             left:0;
-        }
+        } 
 
     }
 
@@ -261,6 +251,7 @@ a:hover{
 
 .teamFlower{
   padding-left: 200px;
+  margin-top:50px;
 }
 
 
@@ -438,6 +429,7 @@ a:hover{
     background-color: #042642;
     padding-left: 50px;
     padding-top: 10px;
+    border-radius: 20px;
 }
 .icon1{
     grid-column: 1 ;
@@ -538,7 +530,21 @@ a:hover{
 
 
 .equipe {
+@media screen and (max-width: 680px) {
+  
+    header {
+        width: 100%;
+        height: 23%;
+        display: flex;
+        background: url(../img/bgh.jpg);
+        border-top-right-radius:30px; 
+        border-top-left-radius:30px; 
+    }
+   .equipe {
+  
+	
     margin:10px 0 10px 15px;
+    
    }
     
 
@@ -585,6 +591,7 @@ a:hover{
     padding: 40px;
     border: #ffffff;
        
+<<<<<<< HEAD
    }
 
       .img4 {
@@ -637,6 +644,10 @@ a:hover{
   
     }
 }
+=======
+      
+       
+>>>>>>> 48d7640a066ab490e4d71bcbc382ac8c90c686ba
   }
 
   @media (max-width: 450px) {
