@@ -13,7 +13,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     width: 90vw;
     height: auto;
@@ -21,8 +21,7 @@ body {
 }
 
 .logo {
-    margin-left:50px;
-    margin-top: 15px;
+    display: flex;
     }
     
     .logoPME{
@@ -37,9 +36,10 @@ body {
     margin-bottom: 75px;
     text-align:center;
     color:  #042642;
-    font-size: 20px;
-    border: 2px solid #F7B658;
-    border-radius: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+    /* border: 2px solid #F7B658;
+    border-radius: 30px; */
     
 }
 
@@ -98,7 +98,9 @@ header {
     width: 100%;
     height: 23%;
     display: flex;
-    background-color: white;
+    background: url(../img/bgh.jpg);
+    border-top-right-radius:30px; 
+    border-top-left-radius:30px; 
 }
 
 .head1 {
@@ -133,31 +135,24 @@ h2 {
 /**** barre de navigation ****/
 nav {
     width: 100%;
-    height: 80px;
+    line-height: : 80px;
     background: #042642;
-    border-radius: 30px;
+    border-bottom-right-radius:30px; 
+    border-bottom-left-radius:30px; 
+
 }
 
 nav ul {
-
+    margin: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-left: 0;
     padding-left: 0;
 }
-nav ul li{
-    display:inline-block;
-   
-    line-height:80px;
-}
-nav ul li a{
-    color:#F7B658;
-}
-a.active{
-    
-    transition: .5s;
-}
+
+
+
 .imgDecoButton{
     width: 20px;
     height: 22px;
@@ -166,19 +161,17 @@ a.active{
 
 a{
     font-size: 18px;
-    margin: 0 50px;
+    margin-left:70px;
     color: white;
     
 }
 
 a:hover{
     font-size: 18px;
-    margin: 0 50px;
+    /* margin: 0 70px; */
     color: #F7B658;
 }
-/* a.active{
-    background-color: #F7B658;
-} */
+
 .checkbtn {
      font-size: 30px; 
      color: white; 
@@ -192,22 +185,21 @@ a:hover{
         display: none;
     }
     @media (max-width:858px){
-        .imgDecoButton{
-         display:none;
+        nav{
+            justify-content: center;
         }
         .checkbtn{
             display:block;
-        }
+        } 
         ul{
             display:none;
-            position: fixed;
             width:100%;
             height: 50vh;
-            background-color:red;
+         
             top: 50pxpx;
             left: -100%;
             text-align: center;
-            transition: all .5s;
+            /* transition: all .5s; */
         }
         nav ul li{
             display:block;
@@ -216,18 +208,16 @@ a:hover{
         }
         nav ul li a{
             font-size:20px;
+            display: none;
         }
-        a{
-            list-style: \ 2698;
-            color:red
-        }
+       
         a:hover,a.active{
             background:none;
             color:#042642;
         }
         #check:checked ~ ul{
             left:0;
-        }
+        } 
 
     }
 
@@ -257,6 +247,7 @@ a:hover{
 
 .teamFlower{
   padding-left: 200px;
+  margin-top:50px;
 }
 
 
@@ -430,10 +421,19 @@ a:hover{
   
 @media screen and (max-width: 680px) {
   
+    header {
+        width: 100%;
+        height: 23%;
+        display: flex;
+        background: url(../img/bgh.jpg);
+        border-top-right-radius:30px; 
+        border-top-left-radius:30px; 
+    }
    .equipe {
   
 	
     margin:10px 0 10px 15px;
+    
    }
     
 
@@ -479,64 +479,8 @@ a:hover{
        
       
        
-<<<<<<< HEAD
-       
-      }
-
-      .img4 {
-        padding-top: 150px;
-    }
-
-  .txt4 {
-    grid-column: 1 ;
-    grid-row: 4;
-    padding: 30px;
-    border: #ffffff;
-    
-      
-      }
-      .img5 {
-        padding-top: 150px;
-    }
-      
-   .txt5 {
-    grid-column: 2 ;
-    grid-row: 5;
-    padding: 40px;
-    border: #ffffff;
-   
-  
-}
-
-.img6 {
-    padding-top: 150px;
-}
-
-   .txt6 {
-    grid-column: 1 ;
-    grid-row: 6;
-    padding: 30px;
-    border: #ffffff;
-     
-      }
-
-      .img7 {
-        padding-top: 150px;
-    }
-      
-        
-   .txt7 {
-    grid-column: 2 ;
-    grid-row: 7;
-    padding: 40px;
-    border: #ffffff;
-  
-    }
-}
-=======
   }
 
   @media (max-width: 450px) {
 
   }
->>>>>>> ceabb5e01a9b17afca1f9f8a6d1f6b92d13a7146
