@@ -24,14 +24,12 @@ body {
     margin-left:50px;
     margin-top: 15px;
     }
-    
-    .logoPME{
+.logoPME{
         border-radius: 50%;
     }
 
 .desc {
     padding: 10px;
-    grid-area: desc;
     margin-left: 150px;
     margin-top: 70px;
     margin-bottom: 75px;
@@ -45,7 +43,7 @@ body {
 
 .bigBox { 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
 
     margin-left: 100px;
 
@@ -64,6 +62,12 @@ body {
     grid-column: 1 6;
     grid-row: 2;
     margin-left: 70px;
+}
+
+.shop1{
+    width:1024px; 
+    height:572px;
+    margin-left: 70px
 }
 
 /**** BARRE DE SÉPARATION ****/
@@ -427,20 +431,124 @@ a:hover{
 
   }
 
+  .containerFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    background-color: #042642;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.icon1{
+    grid-column: 1 ;
+    grid-row: 1 ;
+}
+.icon2{
+    grid-column: 2 ;
+    grid-row: 1 ;
+}
+.icon3{
+    grid-column: 3 ;
+    grid-row: 1 ;
+}
+.icon4{
+    grid-column: 4 ;
+    grid-row: 1 ;
+}
+.infos1{
+   grid-column: 7 ;
+   grid-row: 1 ;
+   color: #ffffff;
+}
+.infos2{
+  grid-column: 7 ;
+  grid-row: 2 ;
+  color: #ffffff;
+}
+.place1{
+    color: #ffffff;
+    grid-column: 1 7 ;
+    grid-row: 2 ;
+    margin-bottom: 30px;
+}
+.place2{
+  color: #ffffff;
+  grid-column:2  ;
+  grid-row: 2 ;
+  margin-bottom: 30px;
+}
+
   
-@media screen and (max-width: 680px) {
-  
-   .equipe {
-  
-	
+@media screen and (max-width: 858px) {
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    float: left;
+    width: 80%;
+    top: 25% ;
+    left: 20%;
+    
+}
+
+.prez {
+    width: 500px ;
+    height: auto;
+    margin-left: 70px;
+}
+
+.openTime {
+    width: 500px ;
+    height: auto;
+    text-align: center;
+
+}
+.separation {
+    border: 2px solid #042642;
+    width: 450px;
+    text-align:center;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 15px;}
+
+.desc {
+    margin-right: 50px;
+    text-align:center;
+    width: 80%;
+    top: 25% ;
+    
+}
+
+.shop {
+    margin-right: 50px;
+    width: 500px;
+    height: auto;
+}
+
+.shop1 {
+    margin-right: 50px;
+    width: 500px;
+    height: auto;
+
+}
+
+
+
+.equipe {
     margin:10px 0 10px 15px;
    }
     
 
 .teamFlower {
-   width: 500px;
-   height: 330px;
-   margin-left: 45px;
+   margin-left: -70px; 
+   width: 700px;
+   height: 430px;
+  
+   
+   
 }
 
   .img1 {
@@ -477,11 +585,7 @@ a:hover{
     padding: 40px;
     border: #ffffff;
        
-      
-       
-<<<<<<< HEAD
-       
-      }
+   }
 
       .img4 {
         padding-top: 150px;
@@ -533,10 +637,8 @@ a:hover{
   
     }
 }
-=======
   }
 
   @media (max-width: 450px) {
 
   }
->>>>>>> ceabb5e01a9b17afca1f9f8a6d1f6b92d13a7146
