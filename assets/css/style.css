@@ -1,3 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
 body {
     display: flex;
     justify-content: center;
@@ -126,18 +133,30 @@ h2 {
 /**** barre de navigation ****/
 nav {
     width: 100%;
-    height: auto;
-    background-color: #042642;
+    height: 80px;
+    background: #042642;
     border-radius: 30px;
 }
 
 nav ul {
-    list-style-type: none;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-left: 0;
     padding-left: 0;
+}
+nav ul li{
+    display:inline-block;
+   
+    line-height:80px;
+}
+nav ul li a{
+    color:#F7B658;
+}
+a.active{
+    
+    transition: .5s;
 }
 .imgDecoButton{
     width: 20px;
@@ -157,6 +176,60 @@ a:hover{
     margin: 0 50px;
     color: #F7B658;
 }
+/* a.active{
+    background-color: #F7B658;
+} */
+.checkbtn {
+     font-size: 30px; 
+     color: white; 
+     float: right;
+     line-height: 80px;
+     margin-right: 40px;
+     cursor: pointer;
+     display: none;
+    }
+    #check{
+        display: none;
+    }
+    @media (max-width:858px){
+        .imgDecoButton{
+         display:none;
+        }
+        .checkbtn{
+            display:block;
+        }
+        ul{
+            display:none;
+            position: fixed;
+            width:100%;
+            height: 50vh;
+            background-color:red;
+            top: 50pxpx;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+        nav ul li{
+            display:block;
+            margin:50px 0;
+            line-height:30px;
+        }
+        nav ul li a{
+            font-size:20px;
+        }
+        a{
+            list-style: \ 2698;
+            color:red
+        }
+        a:hover,a.active{
+            background:none;
+            color:#042642;
+        }
+        #check:checked ~ ul{
+            left:0;
+        }
+
+    }
 
 /* partie presentation de l'equipe + photo */
 .openTime{
@@ -322,4 +395,8 @@ a:hover{
   border-radius: 50%;
   padding: 40px;
        
+  }
+
+  @media (max-width: 450px) {
+
   }
